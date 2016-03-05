@@ -19,7 +19,7 @@
             <column datatype='integer' name='Provider Zip Code' ordinal='5' />
             <column datatype='string' name='Provider Street Address' ordinal='6' />
             <column datatype='integer' name='DRG Discharges' ordinal='7' />
-            <column datatype='real' name='Percent' ordinal='8' />
+            <column datatype='real' name='perc' ordinal='8' />
           </columns>
         </relation>
         <metadata-records>
@@ -139,11 +139,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>Percent</remote-name>
+            <remote-name>perc</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[Percent]</local-name>
+            <local-name>[perc]</local-name>
             <parent-name>[Sheet1]</parent-name>
-            <remote-alias>Percent</remote-alias>
+            <remote-alias>perc</remote-alias>
             <ordinal>8</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -175,7 +175,7 @@
       <column datatype='integer' name='[Provider Id]' role='dimension' type='ordinal' />
       <column datatype='string' name='[Provider State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
       <column datatype='integer' default-format='*00000' name='[Provider Zip Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
-      <layout dim-ordering='alphabetic' dim-percentage='0.464646' measure-ordering='alphabetic' measure-percentage='0.535354' show-structure='true' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.444444' measure-ordering='alphabetic' measure-percentage='0.555556' show-structure='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>
@@ -281,7 +281,6 @@
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
-            <card pane-specification-id='1' param='[excel-direct.1sduffy0a6whrn16y3b8x0tsgtby].[sum:Percent:qk]' type='size' />
           </strip>
         </edge>
         <edge name='top'>
